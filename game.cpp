@@ -17,17 +17,23 @@ void Game::start()
 
 void Game::playTurn()
 {
-    while(true)
+    while (true)
     {
         Player& currentPlayer = turn == 0 ? playerX : playerO;
 
         board.printBoard();
 
-        const int playerInput = currentPlayer.getMove();
-        const int row = playerInput / 3;
-        const int col = playerInput % 3;
+        int playerInput = currentPlayer.getMove();
+        int row = playerInput / 3;
+        int col = playerInput % 3;
 
-        std::cout << "player move is " << row << " " << col << std::endl;
+        while (board.cellFree(row, col) == false)
+        {
+            std::cout << "that cell is not free, please try again: " << std::endl;
+            playerInput = currentPlayer.getMove();
+            row = playerInput / 3;
+            col = playerInput % 3;
+        }
 
         board.setCell(row, col, currentPlayer.getSymbol());
 
