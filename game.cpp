@@ -27,9 +27,9 @@ void Game::playTurn()
         int row = playerInput / 3;
         int col = playerInput % 3;
 
-        while (board.cellFree(row, col) == false)
+        while ((board.cellFree(row, col) == false) || (Board::onBoard(row, col) == false))
         {
-            std::cout << "that cell is not free, please try again: " << std::endl;
+            std::cout << "move not valid, please try again: " << std::endl;
             playerInput = currentPlayer.getMove();
             row = playerInput / 3;
             col = playerInput % 3;
