@@ -2,17 +2,21 @@
 #include "player.h"
 #include "board.h"
 
-Player::Player(char sym) : symbol(sym) {}
-
-char Player::getSymbol() const {
-	return symbol;
+Player::Player(char sym) : symbol(sym)
+{
 }
 
-int Player::getMove() const {
-	std::cout << "Player " << symbol << ", please enter your move ('row col' - 0 to 2): ";
+char Player::getSymbol() const
+{
+    return symbol;
+}
 
-	char row, col;
-	std::cin >> row >> col;
+int Player::getMove() const
+{
+    std::cout << "Player " << symbol << ", please enter your move ('row col' - 0 to 2): ";
 
-	return ((row - '0') * 3 + (col - '0'));
+    char row, col;
+    std::cin >> row >> col;
+
+    return ((row - '0') * 3 + (col - '0'));
 }

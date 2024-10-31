@@ -3,14 +3,16 @@
 
 #include <iostream>
 
-class Player{
+class Player
+{
 private:
-	char symbol;
-public:
-	Player(char sym);
+    char symbol;
 
-	char getSymbol() const;
-	int getMove() const;
+public:
+    Player(char sym);
+
+    char getSymbol() const;
+    int getMove() const;
 };
 
 #endif

@@ -3,19 +3,24 @@
 
 #include <iostream>
 
-class Board{
+#include "player.h"
+
+class Board
+{
 private:
-	int matrix[3][3];
+    int matrix[3][3];
+
 public:
-	Board();
+    Board();
 
-	void printBoard() const;
+    void printBoard() const;
 
-	char getCell(int row, int col) const;
-	void setCell(int row, int col, char val);
+    char getCell(int row, int col) const;
+    void setCell(int row, int col, char val);
 
-	bool onBoard(int row, int col) const;
-	bool cellFree(int row, int col) const;
+    static bool onBoard(int row, int col);
+    bool cellFree(int row, int col) const;
+    bool checkWin(const Player& player) const;
 };
 
 #endif

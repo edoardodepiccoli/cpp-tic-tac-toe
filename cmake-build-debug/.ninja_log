@@ -1,0 +1,15 @@
+# ninja log v6
+1	357	1730381685108081690	CMakeFiles/cpp_tic_tac_toe.dir/main.cpp.o	b24380dc4531ec9b
+1	359	1730381685108233309	CMakeFiles/cpp_tic_tac_toe.dir/player.cpp.o	3bb6b94ba34dc8b1
+0	360	1730381685107765912	CMakeFiles/cpp_tic_tac_toe.dir/board.cpp.o	cbe5ddd655dc7c4f
+360	392	1730381685466903063	cpp_tic_tac_toe	41e8e5c6fab264bc
+5	561	1730381974022565924	CMakeFiles/cpp_tic_tac_toe.dir/main.cpp.o	b24380dc4531ec9b
+6	562	1730381974022772957	CMakeFiles/cpp_tic_tac_toe.dir/player.cpp.o	3bb6b94ba34dc8b1
+4	563	1730381974021668961	CMakeFiles/cpp_tic_tac_toe.dir/board.cpp.o	cbe5ddd655dc7c4f
+563	674	1730381974579858878	cpp_tic_tac_toe	41e8e5c6fab264bc
+12	498	1730382566904009048	CMakeFiles/cpp_tic_tac_toe.dir/board.cpp.o	cbe5ddd655dc7c4f
+13	498	1730382566905153922	CMakeFiles/cpp_tic_tac_toe.dir/main.cpp.o	b24380dc4531ec9b
+13	499	1730382566905342624	CMakeFiles/cpp_tic_tac_toe.dir/player.cpp.o	3bb6b94ba34dc8b1
+499	615	1730382567390634891	cpp_tic_tac_toe	41e8e5c6fab264bc
+5	462	1730382616428293088	CMakeFiles/cpp_tic_tac_toe.dir/main.cpp.o	b24380dc4531ec9b
+462	559	1730382616885519138	cpp_tic_tac_toe	41e8e5c6fab264bc
