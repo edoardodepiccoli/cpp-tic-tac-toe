@@ -1,7 +1,3 @@
-Here's an improved version of the README:
-
----
-
 # C++ CLI Tic-Tac-Toe
 
 A simple command-line Tic-Tac-Toe game built in C++ for two players. The game operates within the terminal, allowing two users to play interactively in real-time. The structure of the code is straightforward and organized into three main classes for clarity and functionality:
