@@ -14,17 +14,19 @@ Board::Board()
     }
 }
 
-void Board::printBoard() const
-{
-    for (int row = 0; row < 3; row++)
-    {
-        for (int col = 0; col < 3; col++)
-        {
-            std::cout << getCell(row, col);
+void Board::printBoard() const {
+    std::cout << "    1   2   3 " << std::endl; // Column numbers for reference
+    for (int row = 0; row < 3; ++row) {
+        std::cout << " " << (row + 1) << " "; // Row numbers for reference
+        for (int col = 0; col < 3; ++col) {
+            std::cout << " " << getCell(row, col) << " ";
+            if (col < 2) std::cout << "|"; // Column separator
         }
-        std::cout << "\n";
+        std::cout << std::endl;
+        if (row < 2) std::cout << "   ---+---+---" << std::endl; // Row separator
     }
 }
+
 
 char Board::getCell(int row, int col) const
 {
@@ -62,8 +64,8 @@ bool Board::checkWin(const Player& player) const
     }
 
     if (
-        (matrix[0][0] == player.getSymbol() && matrix[1][1] == player.getSymbol() && matrix[2][2]) ||
-        (matrix[0][2] == player.getSymbol() && matrix[1][1] == player.getSymbol() && matrix[2][0])
+        (matrix[0][0] == player.getSymbol() && matrix[1][1] == player.getSymbol() && matrix[2][2] == player.getSymbol()) ||
+        (matrix[0][2] == player.getSymbol() && matrix[1][1] == player.getSymbol() && matrix[2][0] == player.getSymbol())
     )
     {
         return true;

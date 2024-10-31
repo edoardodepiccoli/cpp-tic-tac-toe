@@ -13,10 +13,10 @@ char Player::getSymbol() const
 
 int Player::getMove() const
 {
-    std::cout << "Player " << symbol << ", please enter your move ('row col' - 0 to 2): ";
+    std::cout << "Player " << symbol << ", please enter your move ('row col' - 1 to 3): ";
 
     char row, col;
     std::cin >> row >> col;
 
-    return ((row - '0') * 3 + (col - '0'));
+    return ((row - '0' - 1) * 3 + (col - '0' - 1));
 }

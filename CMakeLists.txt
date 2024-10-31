@@ -10,4 +10,6 @@ add_executable(cpp_tic_tac_toe
     board.h
     main.cpp
     player.cpp
-    player.h)
+    player.h
+        game.h
+        game.cpp)
