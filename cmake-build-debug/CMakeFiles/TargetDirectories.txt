@@ -1,3 +1,0 @@
-/Users/edoardo/repos/cpp-tic-tac-toe/cmake-build-debug/CMakeFiles/cpp_tic_tac_toe.dir
-/Users/edoardo/repos/cpp-tic-tac-toe/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/edoardo/repos/cpp-tic-tac-toe/cmake-build-debug/CMakeFiles/rebuild_cache.dir
