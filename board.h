@@ -21,6 +21,7 @@ public:
     static bool onBoard(int row, int col);
     bool cellFree(int row, int col) const;
     bool checkWin(const Player& player) const;
+    bool boardFull() const;
 };
 
 #endif

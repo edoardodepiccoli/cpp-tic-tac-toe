@@ -44,6 +44,13 @@ void Game::playTurn()
 
             break;
         }
+        else if (board.boardFull())
+        {
+            board.printBoard();
+            std::cout << "board is full, game over" << std::endl;
+
+            break;
+        }
         else
         {
             turn = turn == 0 ? 1 : 0;

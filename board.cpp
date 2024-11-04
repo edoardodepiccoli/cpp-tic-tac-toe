@@ -73,3 +73,13 @@ bool Board::checkWin(const Player& player) const
 
         return false;
 }
+
+bool Board::boardFull() const {
+    for (int row = 0; row < 3; ++row) {
+        for (int col = 0; col < 3; ++col) {
+            if (getCell(row, col) == '-') return false;
+        }
+    }
+
+    return true;
+}
